@@ -1,2 +1,1 @@
-FROM jupyter/tensorflow-notebook
-
+FROM jupyter/scipy-notebook
