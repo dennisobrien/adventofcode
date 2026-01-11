@@ -1,18 +1,22 @@
 # adventofcode2019
 Sharing my solutions to the adventofcode.com 2019 series.
 
-# Running the notebook
+# Tools
 
-I am using Jupyter notebooks for these challenge.
+## Jupyter
 
-Build:
+Run the jupyter server locally with:
+
 ```
-$ docker build -t dennisobrien/adventofcode2019:latest -f Dockerfile .
+uv run jupyter lab \
+    --notebook-dir=/home/dennis/workspace/dennisobrien/ \
+    --ServerApp.allow_origin='*' \
+    --ServerApp.ip='0.0.0.0'
 ```
 
-Run:
-``` 
-$ docker run -it -p 8888:8888 -v $(realpath .):/home/jovyan/workspace dennisobrien/adventofcode2019:latest
-```
+See the project `dennisobrien/jupyter-uv` for more details.
 
-Copy the token and launch a browser and go to [http://localhost:8888/](http://localhost:8888/)
+## Convert HTML to Markdown
+
+https://htmlmarkdown.com/
+

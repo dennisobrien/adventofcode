@@ -1,0 +1,22 @@
+[project]
+name = "adventofcode"
+version = "0.1.0"
+description = "Advent of Code Workshop"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "advent-of-code-data[nb]>=2.1.0",
+    "altair>=6.0.0",
+    "jupyter-ai-magics>=2.31.7",
+    "matplotlib>=3.10.7",
+    "numpy>=2.3.5",
+    "pandas>=2.3.3",
+    "scikit-learn>=1.7.2",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.1.0",
+    "ipython>=9.8.0",
+    "pytest>=9.0.1",
+]
